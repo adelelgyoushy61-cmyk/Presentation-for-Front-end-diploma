@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دبلومة تطوير واجهات المستخدم | EraaSoft</title>
+<link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Cairo for Arabic Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS for Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Cairo", "sans-serif"],
+            },
+            colors: {
+              brand: {
+                blue: "#1e3a8a", // Dark blue similar to EraaSoft
+                light: "#3b82f6",
+                accent: "#f59e0b", // Accent color for highlights
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+  </head>
+  <body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold text-brand-blue flex items-center gap-2">
+          <i class="fa-solid fa-code"></i>
+          إيراسوفت <span class="text-brand-light text-sm">Academy</span>
+        </div>
+        <div class="hidden md:flex gap-6 font-semibold text-gray-600">
+          <a href="#about" class="hover:text-brand-blue transition"
+            >ليه الدبلومة؟</a
+          >
+          <a href="#roadmap" class="hover:text-brand-blue transition"
+            >المنهج الدراسي</a
+          >
+          <a href="#features" class="hover:text-brand-blue transition"
+            >المميزات</a
+          >
+          <a href="#reviews" class="hover:text-brand-blue transition"
+            >آراء الطلاب</a
+          >
+        </div>
+        <a
+          href="#contact"
+          class="bg-brand-blue text-white px-5 py-2 rounded-lg font-bold hover:bg-brand-light transition duration-300 shadow-lg"
+        >
+          اشترك الآن
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section (Slide 1) -->
+    <header class="hero-bg text-white min-h-screen flex items-center pt-20">
+      <div class="container mx-auto px-6 text-center reveal active">
+        <span
+          class="bg-brand-light/20 text-brand-light px-4 py-1 rounded-full text-sm font-bold mb-6 inline-block"
+          >دفعة جديدة متاحة الآن</span
+        >
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+          دبلومة <span class="gradient-text">تطوير واجهات المستخدم</span>
+        </h1>
+        <p
+          class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+        >
+          (Front-End Development) <br />
+          استثمارك الحقيقي لتصبح مطور ويب محترف، من الصفر وحتى إتقان React.js و
+          Next.js وبناء بورتفوليو قوي.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#roadmap"
+            class="bg-brand-light hover:bg-blue-400 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 flex items-center justify-center gap-2 shadow-lg shadow-blue-500/30"
+          >
+            استكشف المنهج <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <a
+            href="#about"
+            class="bg-transparent border border-gray-400 hover:border-white hover:bg-white/10 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300"
+          >
+            هل هذه الدبلومة لك؟
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- The 3 Questions Section (Slide 2) -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">
+            فهم احتياجك (الأسئلة التلاتة)
+          </h2>
+          <p class="text-gray-600 text-lg">
+            قبل ما تبدأ، لازم نحدد هدفك بدقة عشان نضمن إنك في المكان الصح.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100 reveal delay-1 hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6"
+            >
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-800">الهدف (ليه؟)</h3>
+            <p class="text-gray-600 leading-relaxed">
+              "هل حابب تبدأ مسارك في البرمجة من الصفر، ولا عايز تطور مهاراتك
+              عشان تصمم مواقع احترافية وتدخل سوق العمل الحر (Freelance)؟"
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100 reveal delay-2 hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-6"
+            >
+              <i class="fa-solid fa-hourglass-half"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-800">الوقت (أمتى؟)</h3>
+            <p class="text-gray-600 leading-relaxed">
+              "هل مستعد تخصص 4 شهور من التركيز والالتزام عشان تبني مستقبلك كـ
+              Web Developer وتغير مسارك المهني؟"
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100 reveal delay-3 hover:-translate-y-2 transition duration-300"
+          >
+            <div
+              class="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-6"
+            >
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-800">
+              الطريقة (إزاي؟)
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              "شايف إن الكورسات المسجلة كفاية، ولا محتاج تدريب عملي مع مهندسين
+              من سوق العمل ومشاريع حقيقية تملأ بيها البورتفوليو بتاعك؟"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Proposition Section (Slide 3) -->
+    <section class="py-20 bg-brand-blue text-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            عرض الدبلومة باختصار
+          </h2>
+          <p class="text-blue-200 text-lg max-w-2xl mx-auto">
+            إيه اللي بنقدمه، وإيه الميزة اللي هتحصل عليها، والنتيجة النهائية.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-6">
+          <div
+            class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm reveal delay-1"
+          >
+            <h3 class="text-xl font-bold text-brand-accent mb-2">
+              <i class="fa-solid fa-box-open ml-2"></i> الخدمة
+            </h3>
+            <p class="text-gray-200 mb-4 font-semibold">
+              دبلومة شاملة (حوالي 16 أسبوع)
+            </p>
+            <p class="text-sm text-gray-300">
+              تغطي أساسيات وتطورات الـ Web من HTML وحتى React. مما يؤدي لبناء
+              أساس برمجي صلب يخليك قادر تبني أي واجهة موقع تخطر على بالك.
+            </p>
+          </div>
+          <div
+            class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm reveal delay-2"
+          >
+            <h3 class="text-xl font-bold text-brand-accent mb-2">
+              <i class="fa-solid fa-star ml-2"></i> الميزة التنافسية
+            </h3>
+            <p class="text-gray-200 mb-4 font-semibold">
+              تطبيق عملي + 5 مشاريع
+            </p>
+            <p class="text-sm text-gray-300">
+              التدريب على يد خبراء مع تعلم TypeScript و Tailwind CSS. تخرج بـ
+              Portfolio قوي يثبت خبرتك للشركات، مش مجرد شهادة ورقية.
+            </p>
+          </div>
+          <div
+            class="bg-white/10 p-6 rounded-xl border border-white/20 backdrop-blur-sm reveal delay-3"
+          >
+            <h3 class="text-xl font-bold text-brand-accent mb-2">
+              <i class="fa-solid fa-trophy ml-2"></i> الفائدة النهائية
+            </h3>
+            <p class="text-gray-200 mb-4 font-semibold">
+              وظيفة أو عمل حر بالدولار
+            </p>
+            <p class="text-sm text-gray-300">
+              الحصول على وظيفة في شركات البرمجة بمرتبات مجزية. استقرار مادي،
+              مسار مهني متطور، والقدرة على مواكبة التكنولوجيا العالمية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap / Curriculum Section (Slide 4) -->
+    <section id="roadmap" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">
+            المنهج الدراسي (Roadmap)
+          </h2>
+          <p class="text-gray-600 text-lg">
+            إحنا مش بس بنعلمك أدوات، إحنا بنبنيك كمطور واجهات متكامل.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <!-- Phase 1 -->
+          <div class="relative pl-8 sm:pl-0 reveal mb-10">
+            <div
+              class="flex flex-col sm:flex-row items-center sm:justify-between"
+            >
+              <div class="hidden sm:block w-1/3 text-left pr-8">
+                <h3 class="text-2xl font-bold text-gray-800">مرحلة التأسيس</h3>
+                <p class="text-brand-light">Front-End Essentials</p>
+              </div>
+              <div
+                class="w-12 h-12 absolute right-0 sm:static sm:mx-auto bg-brand-blue text-white rounded-full flex items-center justify-center text-xl font-bold z-10 shadow-lg border-4 border-white"
+              >
+                1
+              </div>
+              <div
+                class="w-full sm:w-1/3 mt-4 sm:mt-0 bg-white p-6 rounded-xl shadow-md border-r-4 border-brand-blue"
+              >
+                <ul class="space-y-2 text-gray-700 font-semibold">
+                  <li>
+                    <i class="fa-brands fa-html5 text-orange-500 w-6"></i> HTML5
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-css3-alt text-blue-500 w-6"></i> CSS3
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-bootstrap text-purple-600 w-6"></i>
+                    Bootstrap
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-wind text-teal-500 w-6"></i> Tailwind
+                    CSS
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="relative pl-8 sm:pl-0 reveal delay-1 mb-10">
+            <div
+              class="flex flex-col sm:flex-row items-center sm:justify-between"
+            >
+              <div
+                class="w-full sm:w-1/3 mt-4 sm:mt-0 bg-white p-6 rounded-xl shadow-md border-r-4 border-yellow-400 sm:order-1 order-3"
+              >
+                <ul class="space-y-2 text-gray-700 font-semibold text-sm">
+                  <li>
+                    <i class="fa-brands fa-js text-yellow-400 w-6 text-lg"></i>
+                    JS (JavaScript)
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-code text-gray-400 w-6"></i> JS
+                    Methods & DOM/BOM
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-layer-group text-gray-400 w-6"></i>
+                    Higher-Order Functions
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-asterisk text-gray-400 w-6"></i>
+                    Regular Expressions
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-network-wired text-gray-400 w-6"></i>
+                    AJAX
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="w-12 h-12 absolute right-0 sm:static sm:mx-auto bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-xl font-bold z-10 shadow-lg border-4 border-white sm:order-2 order-2"
+              >
+                2
+              </div>
+              <div
+                class="hidden sm:block w-1/3 text-right pl-8 sm:order-3 order-1"
+              >
+                <h3 class="text-2xl font-bold text-gray-800">
+                  مرحلة البرمجة والمنطق
+                </h3>
+                <p class="text-yellow-600">JavaScript Deep Dive</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="relative pl-8 sm:pl-0 reveal delay-2">
+            <div
+              class="flex flex-col sm:flex-row items-center sm:justify-between"
+            >
+              <div class="hidden sm:block w-1/3 text-left pr-8">
+                <h3 class="text-2xl font-bold text-gray-800">مرحلة الاحتراف</h3>
+                <p class="text-brand-light">Modern Frameworks</p>
+              </div>
+              <div
+                class="w-12 h-12 absolute right-0 sm:static sm:mx-auto bg-brand-light text-white rounded-full flex items-center justify-center text-xl font-bold z-10 shadow-lg border-4 border-white"
+              >
+                3
+              </div>
+              <div
+                class="w-full sm:w-1/3 mt-4 sm:mt-0 bg-white p-6 rounded-xl shadow-md border-r-4 border-brand-light"
+              >
+                <ul class="space-y-2 text-gray-700 font-semibold">
+                  <li>
+                    <i class="fa-solid fa-file-code text-blue-600 w-6"></i>
+                    TypeScript
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-react text-cyan-400 w-6"></i> Intro
+                    To React
+                  </li>
+                  <li>
+                    <i class="fa-brands fa-react text-cyan-500 w-6"></i> React
+                    JS (Advanced)
+                  </li>
+                  <li><i class="fa-solid fa-n text-black w-6"></i> Next.js</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12 reveal delay-3">
+          <div
+            class="inline-block bg-yellow-100 border border-yellow-300 text-yellow-800 px-6 py-3 rounded-lg font-bold"
+          >
+            <i
+              class="fa-solid fa-triangle-exclamation ml-2 text-yellow-600"
+            ></i>
+            ملحوظة مهمة: هتخرج من الدبلومة معاك 5 مشاريع عملية حقيقية ترفعهم على
+            الـ Github.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why EraaSoft Section (Slide 5) -->
+    <section id="features" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">
+            استفد من مميزات إيراسوفت
+          </h2>
+          <p class="text-gray-600 text-lg">
+            إيه اللي بيخلينا مختلفين ومكانك الأفضل للتعلم؟
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Feature 1 -->
+          <div
+            class="border border-gray-200 p-6 rounded-2xl text-center hover:shadow-xl transition duration-300 reveal delay-1"
+          >
+            <div
+              class="w-16 h-16 bg-brand-blue text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+            >
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              مدربين بخبرة عملية
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              كل المدربين في إيراسوفت عندهم خبرة حقيقية في سوق العمل بجوار
+              الخبرة التعليمية عشان ينقلوا لك التجربة الفعلية.
+            </p>
+          </div>
+          <!-- Feature 2 -->
+          <div
+            class="border border-gray-200 p-6 rounded-2xl text-center hover:shadow-xl transition duration-300 reveal delay-2"
+          >
+            <div
+              class="w-16 h-16 bg-brand-blue text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+            >
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              تطبيقات عملية مكثفة
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              البرمجة من غير تطبيق نتيجتها صفر. نركز على التطبيقات المكثفة
+              لتتناسب مع أهداف ومتطلبات السوق.
+            </p>
+          </div>
+          <!-- Feature 3 -->
+          <div
+            class="border border-gray-200 p-6 rounded-2xl text-center hover:shadow-xl transition duration-300 reveal delay-3"
+          >
+            <div
+              class="w-16 h-16 bg-brand-blue text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+            >
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              فرصة تدريب أو توظيف
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              متعاقدون مع شركات كثيرة لتوفير فرص تدريب أو عمل للطلاب المتفوقين
+              بناءً على احتياج السوق.
+            </p>
+          </div>
+          <!-- Feature 4 -->
+          <div
+            class="border border-gray-200 p-6 rounded-2xl text-center hover:shadow-xl transition duration-300 reveal delay-3"
+          >
+            <div
+              class="w-16 h-16 bg-brand-blue text-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4"
+            >
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">متابعة مستمرة</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              علاقتنا بطلابنا لا تنتهي! نوفر الدعم والمتابعة لكل طالب حتى يوصل
+              لحلمه في المجال.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section (Slide 6) -->
+    <section id="reviews" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">
+            آراء الطلاب (Social Proof)
+          </h2>
+          <div class="w-20 h-1 bg-brand-accent mx-auto mb-4"></div>
+          <p class="text-gray-600 text-lg">
+            شهادات نعتز بها من طلابنا بعد التجربة الحقيقية.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Review 1 -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 reveal"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-brand-light text-white rounded-full flex items-center justify-center font-bold"
+                >
+                  م
+                </div>
+                <h4 class="font-bold text-gray-800">محمد فوزي</h4>
+              </div>
+              <div class="text-yellow-400 text-sm">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm italic">
+              "الدبلومة ممتازة وغطت الحاجات اللي كنت عاوزها والبيئة بتاعة المكان
+              جميلة جداً تحس إنك في وسط عيلتك، والبشمهندس شخصية محترمة
+              ومتفاهمة."
+            </p>
+          </div>
+
+          <!-- Review 2 -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 reveal delay-1"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-brand-light text-white rounded-full flex items-center justify-center font-bold"
+                >
+                  أ
+                </div>
+                <h4 class="font-bold text-gray-800">أحمد عيسي</h4>
+              </div>
+              <div class="text-yellow-400 text-sm">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm italic">
+              "ده مش كونتنت ده عظمة بجد، شكراً ليكم ولمجهودكم ومتابعتكم معانا،
+              ودائماً في تألق."
+            </p>
+          </div>
+
+          <!-- Review 3 -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 reveal delay-2"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-brand-light text-white rounded-full flex items-center justify-center font-bold"
+                >
+                  ر
+                </div>
+                <h4 class="font-bold text-gray-800">رنا هاني</h4>
+              </div>
+              <div class="text-yellow-400 text-sm">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm italic">
+              "في الأول كنت متعقدة من الجافا سكريبت وفاكرة إنها كل مشاكلي، بس
+              الفضل كله يرجع ليكم ولمجهودكم الأمر بقى سهل وبسيط بالنسبالي جداً."
+            </p>
+          </div>
+
+          <!-- Review 4 -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 reveal"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-brand-light text-white rounded-full flex items-center justify-center font-bold"
+                >
+                  خ
+                </div>
+                <h4 class="font-bold text-gray-800">خالد عوده</h4>
+              </div>
+              <div class="text-yellow-400 text-sm">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm italic">
+              "الدبلومة محترمة الصراحة، والانستراكتور ممتاز جداً والمنتور محدش
+              بيتأخر علينا بصراحة."
+            </p>
+          </div>
+
+          <!-- Review 5 -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 reveal delay-1"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-brand-light text-white rounded-full flex items-center justify-center font-bold"
+                >
+                  ه
+                </div>
+                <h4 class="font-bold text-gray-800">هدى محمد</h4>
+              </div>
+              <div class="text-yellow-400 text-sm">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm italic">
+              "إنتوا ممتازين من أول الأوبريشن والبشمهندسين، ومش هسيبكوا لازم
+              أكون متواجدة في كورس تاني قريب إن شاء الله."
+            </p>
+          </div>
+
+          <!-- Review 6 -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 reveal delay-2"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-brand-light text-white rounded-full flex items-center justify-center font-bold"
+                >
+                  د
+                </div>
+                <h4 class="font-bold text-gray-800">داليا</h4>
+              </div>
+              <div class="text-yellow-400 text-sm">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm italic">
+              "الكل متعاون جداً، الأوبريشن كويسين، والمهندسين مبيتكبروش على
+              التسكات خالص لدرجة إنه مبيدخلناش غير لما يعرف مسلمناهاش ليه، تجربة
+              جميلة."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action & Footer (Slide 7) -->
+    <section id="contact" class="py-16 bg-brand-blue text-white text-center">
+      <div class="container mx-auto px-6 reveal">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">
+          جاهز تبدأ رحلة التغيير؟
+        </h2>
+        <p class="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">
+          الدبلومة دي مش مجرد كورس، دي الخطوة اللي هتنقلك من مجرد "مستخدم"
+          للإنترنت إلى "صانع" ليه.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row justify-center items-center gap-4"
+        >
+          <button
+            class="bg-white text-brand-blue hover:bg-gray-100 font-bold py-4 px-10 rounded-full text-lg transition duration-300 w-full sm:w-auto shadow-xl"
+          >
+            اشترك الآن في Front-End
+          </button>
+          <button
+            class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 w-full sm:w-auto flex items-center justify-center gap-2 shadow-xl"
+          >
+            <i class="fa-brands fa-whatsapp text-2xl"></i> تواصل عبر واتساب
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+      <p>ENG-Adel Front-End developer</p>
+    </footer>
+<script src="mian.js"></script>
+  </body>
+</html>
